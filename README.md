@@ -10,3 +10,4 @@ A team Project
 3. git commit -m "message"   [adds to local repository]
 
 4. git push origin master
+5. git pull origin 
