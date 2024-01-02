@@ -2,6 +2,7 @@
 A team Project 
 
 BLYAAAAAAT SUKKAAAAAAA
+
 # git:
 1. git status
 
