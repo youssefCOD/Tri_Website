@@ -15,6 +15,6 @@ A team Project
 Feature's Description:
     -run at the start in a seprate terminal: 
         npm run build-css
-    and leave it running in a seprate terminal
+     and leave it running in a seprate terminal
 
     -to run live server either run the visual studio extension or run [ live-server public --port=8090 ]  we add the port to avoid errors 
