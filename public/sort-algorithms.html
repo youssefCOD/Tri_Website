@@ -127,11 +127,81 @@
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 -->
 
-    <div class="h-full">
-      <div class="bg-blue-400 w-16"></div>
-      <div class="bg-green-400 w-16"></div>
-      <div class="bg-red-400 w-16"></div>
-    </div>
+    <section
+      class="p-2 w-full min-h-[75vh] flex flex-row gap-10 max-container bg-primary-100/[.06] p-6"
+    >
+      <div class="bg-white w-1/5 p-8 rounded font-semibold">
+        <div class="flex justify-between mb-16">
+          <h1 class="font-semibold text-lg">Sorting Algorithms</h1>
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="w-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="flex flex-col justify-center h-[50vh] overflow-scroll overflow-x-hidden"
+        >
+          <ul class="text-center w-full">
+            <li class="py-4 text-white bg-emerald-500 hover:bg-emerald-600">
+              <a href="#" class="">Bubble Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Insertion Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Selection Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Merge Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Quick Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Heap Sortt</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Radix Sort</a>
+            </li>
+            <li class="py-4 border-b-2 border-gray-50 hover:bg-gray-200">
+              <a href="#" class="">Counting Sort</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full">
+        <div>
+          <ul class="flex flex-row justify-center items-center">
+            <li class="px-12 py-6 bg-white font-semibold">
+              <a href="">Description</a>
+            </li>
+            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
+              <a href="">Simulation</a>
+            </li>
+            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
+              <a href="">Demonstration</a>
+            </li>
+            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
+              <a href="">Code</a>
+            </li>
+          </ul>
+        </div>
+        <div class="panel bg-white h-full rounded-lg"></div>
+      </div>
+    </section>
 
     <footer class="bg-primary-100/[.06] sm:p-6 dark:bg-gray-800">
       <div class="mx-auto max-w-screen-xl">
