@@ -1,5 +1,6 @@
 # Tri_Website
 A team Project 
+
 #Oussama:last Push i created the UI for the Algorithms page
 
 # git:
