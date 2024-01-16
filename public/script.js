@@ -1,16 +1,18 @@
 const simulation = document.querySelector("[data-type='simulation']");
 const bars = simulation.querySelector(".bars");
+const buttons = simulation.querySelector(".buttons");
 const arraySize = 10;
 let arr = [];
 function init(arr) {
   for (let i = 0; i < arraySize; i++) {
     arr[i] = Math.floor(Math.random() * 100);
   }
+  showBars();
 }
 function bubbleSort(arr) {
-  let swapped = false;
   do {
-    for (let i = 0; i < arraySize; i++) {
+    var swapped = false;
+    for (let i = 1; i < arraySize; i++) {
       if (arr[i - 1] > arr[i]) {
         swapped = true;
         [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
@@ -21,9 +23,10 @@ function bubbleSort(arr) {
 function play(arr) {
   init(arr);
   bubbleSort(arr);
-  showBars(arr);
+  showBars();
 }
-function showBars(arr) {
+function showBars() {
+  bars.innerHTML = "";
   for (let i = 0; i < arraySize; i++) {
     const bar = document.createElement("div");
     bar.style.height = arr[i] + "%";
@@ -32,8 +35,13 @@ function showBars(arr) {
     bars.append(bar);
   }
 }
+buttons.querySelector(".btn-init").addEventListener("click", function () {
+  init(arr);
+});
+buttons.querySelector(".btn-play").addEventListener("click", function () {
+  play(arr);
+});
 init(arr);
-bubbleSort(arr);
 
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("nav");
