@@ -128,11 +128,12 @@
 -->
 
     <section
-      class="p-2 w-full min-h-[75vh] flex flex-row gap-10 max-container bg-primary-100/[.06] p-6"
+      class="w-full min-h-[75vh] flex flex-row gap-10 max-container bg-primary-100/[.06] p-6"
     >
       <div class="bg-white w-1/5 p-8 rounded font-semibold">
         <div class="flex justify-between mb-16">
-          <h1 class="font-semibold text-lg">Sorting Algorithms</h1>
+          <h1 class="font-semibold text-lg"></h1>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search Algorithms..." title="Type in a category">
           <svg
             data-slot="icon"
             fill="none"
@@ -151,48 +152,48 @@
           </svg>
         </div>
         <div
-          class="flex flex-col justify-center h-[50vh] overflow-scroll overflow-x-hidden"
+          class="flex flex-col  h-[50vh] overflow-scroll overflow-x-hidden"
         >
-          <ul class="text-center w-full">
+          <ul class="text-center w-full" id="myMenu">
             <li
               class="py-4 text-white bg-emerald-500 hover:bg-emerald-600 cursor-pointer"
             >
-              Bubble Sort
+              <a href="#">Bubble Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Insertion Sort
+              <a href="#">Insertion Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Selection Sort
+              <a href="#">Selection Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Merge Sort
+              <a href="#">Merge Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Quick Sort
+              <a href="#">Quick Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Heap Sortt
+              <a href="#">Heap Sortt</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Radix Sort
+              <a href="#">Radix Sort</a>
             </li>
             <li
               class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
             >
-              Counting Sort
+              <a href="#">Counting Sort</a>
             </li>
           </ul>
         </div>
@@ -442,5 +443,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="algorithms.js"></script>
+    <script src="SearchingBar.js"></script>
   </body>
 </html>
