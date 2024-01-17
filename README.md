@@ -2,6 +2,7 @@
 A team Project 
 
 #Oussama:last Push i created the UI for the Algorithms page
+#Youssef:Search Bar added and functional. 
 
 # git:
 1. git status
@@ -14,7 +15,7 @@ A team Project
 5. git pull origin 
 
 
-Feature's Description:
+Tools and methodes Description:
     -run at the start in a seprate terminal: 
         npm run build-css
      and leave it running in a seprate terminal

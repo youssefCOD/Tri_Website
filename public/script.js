@@ -7,24 +7,37 @@ const buttons = simulation.querySelector(".buttons");
 const arraySize = 10;
 let arr = [];
 
+
 dataBtn.addEventListener("click", function (e) {
   const clicked = e.target.closest("li");
   if (!clicked) return;
   dataBtns.forEach(function (el) {
     el.classList.remove("bg-white");
+    el.classList.remove("text-emerald-600");
   });
   clicked.classList.add("bg-white");
-  console.log(clicked);
+  clicked.classList.add("text-emerald-600");
+
+
   const dataTypes = clicked
     .closest(".sort-container")
     .querySelectorAll(`[data-type]`);
+
+  console.log(dataTypes);
+
   dataTypes.forEach((el) => el.classList.add("hidden"));
+
   const dataType = clicked
     .closest(".sort-container")
     .querySelector(`[data-type=${clicked.dataset.typeClicked}]`);
+
+  console.log("the value that is being cliked is : "+ clicked.dataset.typeClicked);
+
   dataType.classList.remove("hidden");
+
   console.log(dataType);
 });
+
 
 // Functions
 function init(arr) {
