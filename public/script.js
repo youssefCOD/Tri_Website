@@ -1,8 +1,30 @@
+const sorts = document.querySelectorAll("[data-sort]");
+const dataBtn = document.querySelector(".data-btn");
+const dataBtns = dataBtn.querySelectorAll("li");
 const simulation = document.querySelector("[data-type='simulation']");
 const bars = simulation.querySelector(".bars");
 const buttons = simulation.querySelector(".buttons");
 const arraySize = 10;
 let arr = [];
+
+dataBtn.addEventListener("click", function (e) {
+  const clicked = e.target.closest("li");
+  if (!clicked) return;
+  dataBtns.forEach(function (el) {
+    el.classList.remove("bg-white");
+  });
+  clicked.classList.add("bg-white");
+  console.log(clicked);
+  const dataTypes = clicked
+    .closest(".sort-container")
+    .querySelectorAll(`[data-type]`);
+  dataTypes.forEach((el) => el.classList.add("hidden"));
+  const dataType = clicked
+    .closest(".sort-container")
+    .querySelector(`[data-type=${clicked.dataset.typeClicked}]`);
+  dataType.classList.remove("hidden");
+  console.log(dataType);
+});
 
 // Functions
 function init(arr) {

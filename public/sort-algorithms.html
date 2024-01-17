@@ -182,26 +182,38 @@
         </div>
       </div>
 
-      <div class="flex flex-col w-full">
-        <div>
+      <div class="flex flex-col w-full sort-container">
+        <div class="data-btn">
           <ul class="flex flex-row justify-center items-center">
-            <li class="px-12 py-6 bg-white font-semibold">
-              <a href="">Description</a>
+            <li
+              class="px-12 py-6 bg-white font-semibold cursor-pointer"
+              data-type-clicked="description"
+            >
+              Description
             </li>
-            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
-              <a href="">Simulation</a>
+            <li
+              class="px-12 py-6 font-semibold hover:bg-gray-100 cursor-pointer"
+              data-type-clicked="simulation"
+            >
+              Simulation
             </li>
-            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
-              <a href="">Demonstration</a>
+            <li
+              class="px-12 py-6 font-semibold hover:bg-gray-100 cursor-pointer"
+              data-type-clicked="demonstration"
+            >
+              Demonstration
             </li>
-            <li class="px-12 py-6 font-semibold hover:bg-gray-100">
-              <a href="">Code</a>
+            <li
+              class="px-12 py-6 font-semibold hover:bg-gray-100 cursor-pointer"
+              data-type-clicked="code"
+            >
+              Code
             </li>
           </ul>
         </div>
         <div class="panel bg-white h-full rounded-lg">
           <div data-sort="bubble-sort" class="h-full w-full">
-            <div class="p-20 hidden" data-type="description">
+            <div class="p-20 l" data-type="description">
               <h1 class="text-xl font-bold text-emerald-600">Bubble Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
                 Bubble Sort is the simplest sorting algorithm that works by
@@ -247,7 +259,7 @@
               </ul>
             </div>
             <div
-              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10"
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 hidden"
               data-type="simulation"
             >
               <div
@@ -266,7 +278,10 @@
                 </button>
               </div>
             </div>
+            <div data-type="demonstration" class="hidden"></div>
+            <div data-type="code" class="hidden"></div>
           </div>
+          <div data-sort="insertion-sort"></div>
         </div>
       </div>
     </section>
