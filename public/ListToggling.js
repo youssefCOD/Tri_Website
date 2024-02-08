@@ -1,6 +1,7 @@
 const dataBtB = document.querySelector(".data-BTB");
 const dataBtBs = dataBtB.firstElementChild;
 const dataBtBss = dataBtBs.querySelectorAll("li");
+const button = document.getElementById("init_btn");
 
 dataBtB.addEventListener("click", function (e) {
   const clicked = e.target.closest("li");
@@ -10,7 +11,6 @@ dataBtB.addEventListener("click", function (e) {
     el.classList.remove("text-emerald-600");
   });
   clicked.classList.add("text-emerald-600");
-
   //the logic for changing the divs    console.log(clicked);
 
   const dataTypes = clicked
@@ -22,7 +22,7 @@ dataBtB.addEventListener("click", function (e) {
   const dataType = clicked
     .closest(".toggle-typesON")
     .querySelector(`[data-sort=${clicked.dataset.typeClicked}]`);
-
+  button.click();
   // adding a cheking step for error events.
   if (dataType) {
     dataType.classList.remove("hidden");
