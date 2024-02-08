@@ -176,16 +176,13 @@
                 class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
                 data-type-clicked="selection-sort"
               >
-                <a href="#" 
-                  >
-                  Selection Sort
-                </a>
+                <a href="#"> Selection Sort </a>
               </li>
               <li
                 class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
-                data-type-clicked="merge-sort"
+                data-type-clicked="cocktail-sort"
               >
-                <a href="#">Merge Sort</a>
+                <a href="#">Cocktail Sort</a>
               </li>
               <li
                 class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
@@ -201,15 +198,15 @@
               </li>
               <li
                 class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
-                data-type-clicked="radix-sort"
+                data-type-clicked="tim-sort"
               >
-                <a href="#">Radix Sort</a>
+                <a href="#">Tim Sort</a>
               </li>
               <li
                 class="py-4 border-b-2 border-gray-50 hover:bg-gray-200 cursor-pointer"
-                data-type-clicked="counting-sort"
+                data-type-clicked="shell-sort"
               >
-                <a href="#">Counting Sort</a>
+                <a href="#">Shell Sort</a>
               </li>
             </ul>
           </div>
@@ -385,9 +382,15 @@
             <div data-type="demonstration-2" class="hidden"></div>
             <div data-type="code-2" class="hidden"></div>
           </div>
-          <div data-sort="selection-sort" data-number="3" class="hidden">
+          <div
+            data-sort="selection-sort"
+            data-number="3"
+            class="hidden h-full w-full"
+          >
             <div class="hidden p-20" data-type="description-3">
-              <h1 class="text-xl font-bold text-emerald-600">Selection Sort:</h1>
+              <h1 class="text-xl font-bold text-emerald-600">
+                Selection Sort:
+              </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
                 Bubble Sort is the simplest sorting algorithm that works by
                 repeatedly swapping the adjacent elements if they are in the
@@ -431,15 +434,36 @@
                 </li>
               </ul>
             </div>
-            <div class="hidden" data-type="simulation-3">
-              
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-3"
+            >
+              <div
+                class="bars3 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons3">
+                <button
+                  class="btn-init-selection text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-selection text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
             </div>
             <div class="hidden" data-type="demonstration-3"></div>
             <div class="hidden" data-type="code-3"></div>
           </div>
-          <div data-sort="merge-sort" data-number="4" class="hidden">
+          <div
+            data-sort="cocktail-sort"
+            data-number="4"
+            class="hidden h-full w-full"
+          >
             <div class="hidden p-20" data-type="description-4">
-              <h1 class="text-xl font-bold text-emerald-600">Merge Sort:</h1>
+              <h1 class="text-xl font-bold text-emerald-600">Cocktail Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
                 Bubble Sort is the simplest sorting algorithm that works by
                 repeatedly swapping the adjacent elements if they are in the
@@ -483,33 +507,320 @@
                 </li>
               </ul>
             </div>
-            <div class="hidden" data-type="simulation-4"></div>
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-4"
+            >
+              <div
+                class="bars4 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons4">
+                <button
+                  class="btn-init-cocktail text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-cocktail text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
+            </div>
             <div class="hidden" data-type="demonstration-4"></div>
             <div class="hidden" data-type="code-4"></div>
           </div>
-          <div data-sort="quick-sort" class="hidden">
-            <div class="hidden" data-type="description"></div>
-            <div class="hidden" data-type="simulation"></div>
+          <div
+            data-sort="quick-sort"
+            data-number="5"
+            class="hidden h-full w-full"
+          >
+            <div class="hidden p-20" data-type="description-5">
+              <h1 class="text-xl font-bold text-emerald-600">Quick Sort:</h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Bubble Sort is the simplest sorting algorithm that works by
+                repeatedly swapping the adjacent elements if they are in the
+                wrong order. This algorithm is not suitable for large data sets
+                as its average and worst-case time complexity is quite high.
+              </p>
+              <h1 class="text-xl font-bold text-emerald-600 mt-4">
+                Complexity Analysis of Bubble Sort:
+              </h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Time Complexity: O(N<sup> 2</sup>)
+              </p>
+              <p class="pl-6 break-all italic font-semibold">
+                Auxiliary Space: O(1)
+              </p>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Advantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Bubble sort is easy to understand and implement.</li>
+                <li>It does not require any additional memory space.</li>
+                <li>
+                  It is a stable sorting algorithm, meaning that elements with
+                  the same key value maintain their relative order in the sorted
+                  output.
+                </li>
+              </ul>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Disadvantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>
+                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
+                  makes it very slow for large data sets.
+                </li>
+                <li>
+                  Bubble sort is a comparison-based sorting algorithm, which
+                  means that it requires a comparison operator to determine the
+                  relative order of elements in the input data set. It can limit
+                  the efficiency of the algorithm in certain cases.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-5"
+            >
+              <div
+                class="bars5 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons5">
+                <button
+                  class="btn-init-quick text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-quick text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
+            </div>
+            <div class="hidden" data-type="demonstration-5"></div>
+            <div class="hidden" data-type="code-5"></div>
+          </div>
+          <div
+            data-sort="heap-sort"
+            data-number="6"
+            class="hidden h-full w-full"
+          >
+            <div class="hidden p-20" data-type="description-6">
+              <h1 class="text-xl font-bold text-emerald-600">Heap Sort:</h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Bubble Sort is the simplest sorting algorithm that works by
+                repeatedly swapping the adjacent elements if they are in the
+                wrong order. This algorithm is not suitable for large data sets
+                as its average and worst-case time complexity is quite high.
+              </p>
+              <h1 class="text-xl font-bold text-emerald-600 mt-4">
+                Complexity Analysis of Bubble Sort:
+              </h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Time Complexity: O(N<sup> 2</sup>)
+              </p>
+              <p class="pl-6 break-all italic font-semibold">
+                Auxiliary Space: O(1)
+              </p>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Advantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Bubble sort is easy to understand and implement.</li>
+                <li>It does not require any additional memory space.</li>
+                <li>
+                  It is a stable sorting algorithm, meaning that elements with
+                  the same key value maintain their relative order in the sorted
+                  output.
+                </li>
+              </ul>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Disadvantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>
+                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
+                  makes it very slow for large data sets.
+                </li>
+                <li>
+                  Bubble sort is a comparison-based sorting algorithm, which
+                  means that it requires a comparison operator to determine the
+                  relative order of elements in the input data set. It can limit
+                  the efficiency of the algorithm in certain cases.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-6"
+            >
+              <div
+                class="bars6 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons6">
+                <button
+                  class="btn-init-heap text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-heap text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
+            </div>
+            <div class="hidden" data-type="demonstration-6"></div>
+            <div class="hidden" data-type="code-6"></div>
+          </div>
+          <div
+            data-sort="tim-sort"
+            data-number="7"
+            class="hidden h-full w-full"
+          >
+            <div class="hidden p-20" data-type="description-7">
+              <h1 class="text-xl font-bold text-emerald-600">Tim Sort:</h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Bubble Sort is the simplest sorting algorithm that works by
+                repeatedly swapping the adjacent elements if they are in the
+                wrong order. This algorithm is not suitable for large data sets
+                as its average and worst-case time complexity is quite high.
+              </p>
+              <h1 class="text-xl font-bold text-emerald-600 mt-4">
+                Complexity Analysis of Bubble Sort:
+              </h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Time Complexity: O(N<sup> 2</sup>)
+              </p>
+              <p class="pl-6 break-all italic font-semibold">
+                Auxiliary Space: O(1)
+              </p>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Advantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Bubble sort is easy to understand and implement.</li>
+                <li>It does not require any additional memory space.</li>
+                <li>
+                  It is a stable sorting algorithm, meaning that elements with
+                  the same key value maintain their relative order in the sorted
+                  output.
+                </li>
+              </ul>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Disadvantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>
+                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
+                  makes it very slow for large data sets.
+                </li>
+                <li>
+                  Bubble sort is a comparison-based sorting algorithm, which
+                  means that it requires a comparison operator to determine the
+                  relative order of elements in the input data set. It can limit
+                  the efficiency of the algorithm in certain cases.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-7"
+            >
+              <div
+                class="bars7 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons7">
+                <button
+                  class="btn-init-tim text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-tim text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
+            </div>
             <div class="hidden" data-type="demonstration"></div>
             <div class="hidden" data-type="code"></div>
           </div>
-          <div data-sort="heap-sort" class="hidden">
-            <div class="hidden" data-type="description"></div>
-            <div class="hidden" data-type="simulation"></div>
-            <div class="hidden" data-type="demonstration"></div>
-            <div class="hidden" data-type="code"></div>
-          </div>
-          <div data-sort="radix-sort" class="hidden">
-            <div class="hidden" data-type="description"></div>
-            <div class="hidden" data-type="simulation"></div>
-            <div class="hidden" data-type="demonstration"></div>
-            <div class="hidden" data-type="code"></div>
-          </div>
-          <div data-sort="counting-sort" class="hidden">
-            <div class="hidden" data-type="description"></div>
-            <div class="hidden" data-type="simulation"></div>
-            <div class="hidden" data-type="demonstration"></div>
-            <div class="hidden" data-type="code"></div>
+          <div
+            data-sort="shell-sort"
+            data-number="8"
+            class="hidden h-full w-full"
+          >
+            <div class="hidden p-20" data-type="description-8">
+              <h1 class="text-xl font-bold text-emerald-600">Shell Sort:</h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Bubble Sort is the simplest sorting algorithm that works by
+                repeatedly swapping the adjacent elements if they are in the
+                wrong order. This algorithm is not suitable for large data sets
+                as its average and worst-case time complexity is quite high.
+              </p>
+              <h1 class="text-xl font-bold text-emerald-600 mt-4">
+                Complexity Analysis of Bubble Sort:
+              </h1>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Time Complexity: O(N<sup> 2</sup>)
+              </p>
+              <p class="pl-6 break-all italic font-semibold">
+                Auxiliary Space: O(1)
+              </p>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Advantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Bubble sort is easy to understand and implement.</li>
+                <li>It does not require any additional memory space.</li>
+                <li>
+                  It is a stable sorting algorithm, meaning that elements with
+                  the same key value maintain their relative order in the sorted
+                  output.
+                </li>
+              </ul>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Disadvantages of Bubble Sort:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>
+                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
+                  makes it very slow for large data sets.
+                </li>
+                <li>
+                  Bubble sort is a comparison-based sorting algorithm, which
+                  means that it requires a comparison operator to determine the
+                  relative order of elements in the input data set. It can limit
+                  the efficiency of the algorithm in certain cases.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
+              data-type="simulation-8"
+            >
+              <div
+                class="bars8 h-full w-full flex flex-row gap-4 justify-center items-end"
+              ></div>
+              <div class="buttons8">
+                <button
+                  class="btn-init-shell text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  New Test
+                </button>
+                <button
+                  class="btn-play-shell text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-12 py-6 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Start Simulation
+                </button>
+              </div>
+            </div>
+            <div class="hidden" data-type="demonstration-8"></div>
+            <div class="hidden" data-type="code-8"></div>
           </div>
         </div>
       </div>
