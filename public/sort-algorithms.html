@@ -317,45 +317,54 @@
             data-number="2"
             class="h-full w-full hidden"
           >
-            <div class="p-20 l" data-type="description-2">
-              <h1 class="text-xl font-bold text-emerald-600">insertion-sort</h1>
+            <div class="p-20" data-type="description-2">
+              <h1 class="text-xl font-bold text-emerald-600">
+                Insertion Sort:
+              </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                insertion-sort and a big paragraph of information
+                Insertion sort is a simple sorting algorithm that works similar
+                to the way you sort playing cards in your hands. The array is
+                virtually split into a sorted and an unsorted part. Values from
+                the unsorted part are picked and placed at the correct position
+                in the sorted part.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of insertion-sort:
+                Complexity Analysis of Insertion Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity:
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
-              </p>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of insertion-sort:
-              </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
                 <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
+                  The worst-case time complexity of the Insertion sort is
+                  O(N<sup> 2</sup>).
                 </li>
+                <li>
+                  The average case time complexity of the Insertion sort is
+                  O(N<sup> 2</sup>).
+                </li>
+                <li>The time complexity of the best case is O(N).</li>
               </ul>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Space Complexity of Insertion Sort:
+              </p>
+              <p class="pl-12 mt-4 break-all italic font-semibold">
+                The auxiliary space complexity of Insertion Sort is O(1).
+              </p>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of insertion-sort:
+                Characteristics of Insertion Sort:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  This algorithm is one of the simplest algorithms with a simple
+                  implementation.
                 </li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  Basically, Insertion sort is efficient for small data values.
+                </li>
+                <li>
+                  Insertion sort is adaptive in nature, i.e. it is appropriate
+                  for data sets that are already partially sorted.
                 </li>
               </ul>
             </div>
@@ -392,45 +401,57 @@
                 Selection Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                Selection sort is a simple and efficient sorting algorithm that
+                works by repeatedly selecting the smallest (or largest) element
+                from the unsorted portion of the list and moving it to the
+                sorted portion of the list.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Selection Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity: The time complexity of Selection Sort is
+                O(N<sup> 2</sup>) as there are two nested loops:
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
-              </p>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
-              </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
                 <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
+                  One loop to select an element of Array one by one = O(N).
+                </li>
+                <li>
+                  Another loop to compare that element with every other Array
+                  element = O(N).
+                </li>
+                <li>
+                  Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N<sup>
+                    2</sup
+                  >).
                 </li>
               </ul>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Auxiliary Space: O(1) as the only extra memory used is for
+                temporary variables while swapping two values in Array. The
+                selection sort never makes more than O(N) swaps and can be
+                useful when memory writing is costly.
+              </p>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
+                Advantages of Selection Sort Algorithm:
+              </h1>
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Simple and easy to understand.</li>
+                <li>Works well with small datasets.</li>
+              </ul>
+              <h1 class="text-xl font-bold mt-4 text-emerald-600">
+                Disadvantages of the Selection Sort Algorithm:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  Selection sort has a time complexity of O(N<sup> 2</sup>) in
+                  the worst and average case.
                 </li>
+                <li>Does not work well on large datasets.</li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  Does not preserve the relative order of items with equal keys
+                  which means it is not stable.
                 </li>
               </ul>
             </div>
@@ -465,47 +486,34 @@
             <div class="hidden p-20" data-type="description-4">
               <h1 class="text-xl font-bold text-emerald-600">Cocktail Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                Cocktail Sort is a variation of Bubble sort. The Bubble sort
+                algorithm always traverses elements from left and moves the
+                largest element to its correct position in the first iteration
+                and second-largest in the second iteration and so on. Cocktail
+                Sort traverses through a given array in both directions
+                alternatively. <br />Cocktail sort does not go through the
+                unnecessary iteration making it efficient for large arrays.
+                Cocktail sorts break down barriers that limit bubble sorts from
+                being efficient enough on large arrays by not allowing them to
+                go through unnecessary iterations on one specific region (or
+                cluster) before moving onto another section of an array.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Cocktail Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                The time complexity of Cocktail Sort is O(N<sup> 2</sup>) in the
+                worst and average cases, where n is the number of elements in
+                the array. This is because the algorithm iterates through the
+                array multiple times, and in the worst case, each iteration
+                involves comparing every element to its neighbor and possibly
+                swapping them.<br />
+                The best case time complexity is O(n) when the array is already
+                sorted, but this is a rare case. The space complexity of
+                Cocktail Sort is O(1), which is constant. This is because the
+                algorithm sorts the array in place, without using any extra
+                memory.
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
-              </p>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
-              </h1>
-              <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
-                <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
-                </li>
-              </ul>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
-              </h1>
-              <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
-                </li>
-                <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
-                </li>
-              </ul>
             </div>
             <div
               class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
@@ -538,45 +546,76 @@
             <div class="hidden p-20" data-type="description-5">
               <h1 class="text-xl font-bold text-emerald-600">Quick Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                QuickSort is a sorting algorithm based on the Divide and Conquer
+                algorithm that picks an element as a pivot and partitions the
+                given array around the picked pivot by placing the pivot in its
+                correct position in the sorted array.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Quick Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity:
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
+              <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>
+                  Best Case: Ω (N log (N))<br />
+                  The best-case scenario for quicksort occur when the pivot
+                  chosen at the each step divides the array into roughly equal
+                  halves. In this case, the algorithm will make balanced
+                  partitions, leading to efficient Sorting.
+                </li>
+                <li>
+                  Average Case: θ ( N log (N))<br />
+                  Quicksort’s average-case performance is usually very good in
+                  practice, making it one of the fastest sorting Algorithm.
+                </li>
+                <li>
+                  Worst Case: O(N<sup> 2</sup>)<br />
+                  The worst-case Scenario for Quicksort occur when the pivot at
+                  each step consistently results in highly unbalanced
+                  partitions. When the array is already sorted and the pivot is
+                  always chosen as the smallest or largest element. To mitigate
+                  the worst-case Scenario, various techniques are used such as
+                  choosing a good pivot (e.g., median of three) and using
+                  Randomized algorithm (Randomized Quicksort ) to shuffle the
+                  element before sorting.
+                </li>
+              </ul>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Auxiliary Space: O(1), if we don’t consider the recursive stack
+                space. If we consider the recursive stack space then, in the
+                worst case quicksort could make O(N).
               </p>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
+                Advantages of Quick Sort:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
                 <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
+                  It is a divide-and-conquer algorithm that makes it easier to
+                  solve problems.
+                </li>
+                <li>It is efficient on large data sets.</li>
+                <li>
+                  It has a low overhead, as it only requires a small amount of
+                  memory to function.
                 </li>
               </ul>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
+                Disadvantages of Quick Sort:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  It has a worst-case time complexity of O(N<sup> 2</sup>),
+                  which occurs when the pivot is chosen poorly.
                 </li>
+                <li>It is not a good choice for small data sets.</li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  It is not a stable sort, meaning that if two elements have the
+                  same key, their relative order will not be preserved in the
+                  sorted output in case of quick sort, because here we are
+                  swapping elements according to the pivot’s position (without
+                  considering their original positions).
                 </li>
               </ul>
             </div>
@@ -611,45 +650,57 @@
             <div class="hidden p-20" data-type="description-6">
               <h1 class="text-xl font-bold text-emerald-600">Heap Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                Heap sort is a comparison-based sorting technique based on
+                Binary Heap data structure. It is similar to the selection sort
+                where we first find the minimum element and place the minimum
+                element at the beginning. Repeat the same process for the
+                remaining elements.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Heap Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity: O(N log N).
               </p>
               <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
+                Auxiliary Space: O(log n), due to the recursive call stack.
+                However, auxiliary space can be O(1) for iterative
+                implementation.
               </p>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
+                Advantages of Heap Sort:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
                 <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
+                  Efficient Time Complexity: Heap Sort has a time complexity of
+                  O(n log n) in all cases. This makes it efficient for sorting
+                  large datasets. The log n factor comes from the height of the
+                  binary heap, and it ensures that the algorithm maintains good
+                  performance even with a large number of elements.
+                </li>
+                <li>
+                  Memory Usage: Memory usage can be minimal because apart from
+                  what is necessary to hold the initial list of items to be
+                  sorted, it needs no additional memory space to work.
+                </li>
+                <li>
+                  Simplicity: It is simpler to understand than other equally
+                  efficient sorting algorithms because it does not use advanced
+                  computer science concepts such as recursion.
                 </li>
               </ul>
               <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
+                Disadvantages of Heap Sort:
               </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
+                <li>Costly: Heap sort is costly.</li>
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  Unstable: Heap sort is unstable. It might rearrange the
+                  relative order.
                 </li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  Efficient: Heap Sort is not very efficient when working with
+                  highly complex data.
                 </li>
               </ul>
             </div>
@@ -684,47 +735,40 @@
             <div class="hidden p-20" data-type="description-7">
               <h1 class="text-xl font-bold text-emerald-600">Tim Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                Tim Sort is a hybrid sorting algorithm derived from merge sort
+                and insertion sort. It was designed to perform well on many
+                kinds of real-world data. Tim Sort is the default sorting
+                algorithm used by Python’s sorted() and list.sort() functions.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Tim Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity:
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
-              </p>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
-              </h1>
-              <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
-                <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
-                </li>
-              </ul>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
-              </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  Best Case Complexity - It occurs when there is no sorting
+                  required, i.e. the array is already sorted. The best-case time
+                  complexity of Tim sort is O(n).
                 </li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  Average Case Complexity - It occurs when the array elements
+                  are in jumbled order that is not properly ascending and not
+                  properly descending. The average case time complexity of Tim
+                  sort is O(n log n).
+                </li>
+                <li>
+                  Worst Case Complexity - It occurs when the array elements are
+                  required to be sorted in reverse order. That means suppose you
+                  have to sort the array elements in ascending order, but its
+                  elements are in descending order. The worst-case time
+                  complexity of Tim sort is O(n log n).
                 </li>
               </ul>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Space Complexity: The space complexity of Tim sort is O(n).
+              </p>
             </div>
             <div
               class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
@@ -757,47 +801,47 @@
             <div class="hidden p-20" data-type="description-8">
               <h1 class="text-xl font-bold text-emerald-600">Shell Sort:</h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Bubble Sort is the simplest sorting algorithm that works by
-                repeatedly swapping the adjacent elements if they are in the
-                wrong order. This algorithm is not suitable for large data sets
-                as its average and worst-case time complexity is quite high.
+                Shell sort is mainly a variation of Insertion Sort. In insertion
+                sort, we move elements only one position ahead. When an element
+                has to be moved far ahead, many movements are involved. The idea
+                of ShellSort is to allow the exchange of far items. In Shell
+                sort, we make the array h-sorted for a large value of h. We keep
+                reducing the value of h until it becomes 1. An array is said to
+                be h-sorted if all sublists of every h’th element are sorted.
               </p>
               <h1 class="text-xl font-bold text-emerald-600 mt-4">
-                Complexity Analysis of Bubble Sort:
+                Complexity Analysis of Shell Sort:
               </h1>
               <p class="pl-6 mt-4 break-all italic font-semibold">
-                Time Complexity: O(N<sup> 2</sup>)
+                Time Complexity: Time complexity of the above implementation of
+                Shell sort is O(n2). In the above implementation, the gap is
+                reduced by half in every iteration. There are many other ways to
+                reduce gaps which leads to better time complexity. See this for
+                more details.
               </p>
-              <p class="pl-6 break-all italic font-semibold">
-                Auxiliary Space: O(1)
-              </p>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Advantages of Bubble Sort:
-              </h1>
-              <ul class="pl-12 mt-4 font-semibold italic list-disc">
-                <li>Bubble sort is easy to understand and implement.</li>
-                <li>It does not require any additional memory space.</li>
-                <li>
-                  It is a stable sorting algorithm, meaning that elements with
-                  the same key value maintain their relative order in the sorted
-                  output.
-                </li>
-              </ul>
-              <h1 class="text-xl font-bold mt-4 text-emerald-600">
-                Disadvantages of Bubble Sort:
-              </h1>
               <ul class="pl-12 mt-4 font-semibold italic list-disc">
                 <li>
-                  Bubble sort has a time complexity of O(N<sup> 2</sup>) which
-                  makes it very slow for large data sets.
+                  Worst Case Complexity: The worst-case complexity for shell
+                  sort is O(N<sup> 2</sup>)
                 </li>
                 <li>
-                  Bubble sort is a comparison-based sorting algorithm, which
-                  means that it requires a comparison operator to determine the
-                  relative order of elements in the input data set. It can limit
-                  the efficiency of the algorithm in certain cases.
+                  Best Case Complexity: When the given array list is already
+                  sorted the total count of comparisons of each interval is
+                  equal to the size of the given array. So best case complexity
+                  is Ω(n log(n))
+                </li>
+                <li>
+                  Average Case Complexity: The shell sort Average Case
+                  Complexity depends on the interval selected by the programmer.
+                  θ(n log(n)2). THE Average Case Complexity: O(n*log n)~O(N<sup>
+                    1.25</sup
+                  >)
                 </li>
               </ul>
+              <p class="pl-6 mt-4 break-all italic font-semibold">
+                Space Complexity: The space complexity of the shell sort is
+                O(1).
+              </p>
             </div>
             <div
               class="p-20 h-full w-full flex flex-col justify-center items-center gap-10 simulation hidden"
