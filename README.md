@@ -1,8 +1,6 @@
 # Tri_Website
 A team Project 
 
-#Oussama:last Push i created the UI for the Algorithms page
-#Youssef:Search Bar added and functional. 
 
 # git:
 1. git status
