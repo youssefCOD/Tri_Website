@@ -27,10 +27,10 @@ dataBtB.addEventListener("click", function (e) {
   if (dataType) {
     dataType.classList.remove("hidden");
     dataType.firstElementChild.classList.remove("hidden");
-    dataBtns.forEach(function (el) {
-      el.classList.remove("bg-white");
-      el.classList.remove("text-emerald-600");
-    });
+    // dataBtns.forEach(function (el) {
+    //   el.classList.remove("bg-white");
+    //   el.classList.remove("text-emerald-600");
+    // });
   } else {
     console.error("Element not found!"); // Optional: log an error or handle the case where the element is not found
   }

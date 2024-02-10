@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SortVista</title>
     <link rel="stylesheet" href="css/output.css" />
+    <style>
+      /* Define CSS classes for transparent and opaque header */
+      .transparent-header {
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .opaque-header {
+        background-color: #ffffff; /* Change to desired opaque background color */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow effect */
+      }
+    </style>
   </head>
   <body>
-    <header class="fixed w-full z-50">
+    <header class="fixed w-full z-50 header_frame transparent-header">
       <nav
-        class="transition ease-in-out delay-400 bg-transparent border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+        class="header_frame py-2.5 "
       >
         <div
           class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
@@ -22,12 +33,12 @@
             >
           </a>
           <div class="flex items-center lg:order-2">
-            <a
+            <!-- <a
               href="#"
               class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
               >Log in</a
-            >
-            <a
+            > -->
+            <!-- <a
               href="#"
               class="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >Create An Account</a
@@ -38,8 +49,8 @@
               class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
+            > -->
+              <!-- <span class="sr-only">Open main menu</span>
               <svg
                 class="w-6 h-6"
                 fill="currentColor"
@@ -64,7 +75,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </button> -->
           </div>
           <div
             class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
@@ -75,8 +86,8 @@
             >
               <li>
                 <a
-                  href="#"
-                  class="cursor-pointer block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  href="index.html"
+                  class="cursor-pointer block py-2 pr-4 pl-3 text-white rounded bg-emerald-600 lg:bg-transparent lg:text-emerald-600 lg:p-0 dark:text-white"
                   aria-current="page"
                   >Home</a
                 >
@@ -84,36 +95,23 @@
               <li>
                 <a
                   href="sort-algorithms.html"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >Sort-Algorithms</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >AI Tools</a
+                  href="Editor.html"
+                  
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Editor</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-green-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-green-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-emerald-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >Team</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Contact</a
                 >
               </li>
             </ul>
@@ -165,11 +163,11 @@
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                href="sort-algorithms.html"
+                class="rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >Get started</a
               >
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              <a href="sort-algorithms.html" class="text-sm font-semibold leading-6 text-gray-900"
                 >Learn more <span aria-hidden="true">→</span></a
               >
             </div>
@@ -267,11 +265,11 @@
             class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="#">
-              <img
+              <!-- <img
                 class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src=""
                 alt="Bonnie Avatar"
-              />
+              /> -->
             </a>
             <div class="p-5">
               <h3
@@ -368,11 +366,11 @@
             class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="#">
-              <img
+              <!-- <img
                 class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                 src=""
                 alt="Jese Avatar"
-              />
+              /> -->
             </a>
             <div class="p-5">
               <h3
@@ -493,7 +491,7 @@
                   <a href="#" class="hover:underline">Sort Visualisation</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">Data Structure</a>
+                  <a href="#" class="hover:underline">Sort Algorithms</a>
                 </li>
               </ul>
             </div>
@@ -506,7 +504,7 @@
               <ul class="text-gray-600 dark:text-gray-400">
                 <li class="mb-4">
                   <a
-                    href="https://github.com/youssefCOD"
+                    href="https://github.com/youssefCOD/Tri_Website"
                     class="hover:underline"
                     >Github</a
                   >
@@ -630,5 +628,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/headerStiky.js"></script>
   </body>
 </html>

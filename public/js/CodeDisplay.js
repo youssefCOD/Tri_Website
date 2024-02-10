@@ -20,5 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements whose IDs start with "content"
+    var contentElements = document.querySelectorAll('[id^="content"]');
+  
+    // Loop through each content element and remove the "hidden" class
+    contentElements.forEach(function(element) {
+      element.classList.remove('hidden');
+    });
+});
+
 
 
