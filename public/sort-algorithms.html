@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SortVista</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css">
   </head>
   <body>
@@ -306,7 +306,44 @@
                 </button>
               </div>
             </div>
-            <div data-type="demonstration-1" class="hidden"></div>
+            <div data-type="demonstration-1" class="pl-36 hidden font-semibold">
+              <h2 class=" text-emerald-600 text-2xl pb-4">Working of Bubble sort Algorithm:</h2>
+              <p>Now, let's see the working of Bubble sort Algorithm.</p>
+              <p>To understand the working of bubble sort algorithm, let's take an unsorted array. We are taking a short and accurate array, as we know the complexity of bubble sort is <strong>O(n<sup>2</sup>).</strong></p>
+              <p>Let the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm1.png" alt="Bubble sort Algorithm">
+              <h3 class="text-emerald-600 ">First Pass</h3>
+              <p>Sorting will start from the initial two elements. Let compare them to check which is greater.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm2.png" alt="Bubble sort Algorithm">
+              <p>Here, 32 is greater than 13 (32 &gt; 13), so it is already sorted. Now, compare 32 with 26.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm3.png" alt="Bubble sort Algorithm">
+              <p>Here, 26 is smaller than 36. So, swapping is required. After swapping new array will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm4.png" alt="Bubble sort Algorithm">
+              <p>Now, compare 32 and 35.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm5.png" alt="Bubble sort Algorithm">
+              <p>Here, 35 is greater than 32. So, there is no swapping required as they are already sorted.</p>
+              <p>Now, the comparison will be in between 35 and 10.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm6.png" alt="Bubble sort Algorithm">
+              <p>Here, 10 is smaller than 35 that are not sorted. So, swapping is required. Now, we reach at the end of the array. After first pass, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm7.png" alt="Bubble sort Algorithm">
+              <p>Now, move to the second iteration.</p>
+              <h3 class="text-emerald-600">Second Pass</h3>
+              <p>The same process will be followed for second iteration.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm8.png" alt="Bubble sort Algorithm">
+              <p>Here, 10 is smaller than 32. So, swapping is required. After swapping, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm9.png" alt="Bubble sort Algorithm">
+              <p>Now, move to the third iteration.</p>
+              <h3 class="text-emerald-600">Third Pass</h3>
+              <p>The same process will be followed for third iteration.</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm10.png" alt="Bubble sort Algorithm">
+              <p>Here, 10 is smaller than 26. So, swapping is required. After swapping, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm11.png" alt="Bubble sort Algorithm">
+              <p>Now, move to the fourth iteration.</p>
+              <h3 class="text-emerald-600">Fourth pass</h3>
+              <p>Similarly, after the fourth iteration, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm12.png" alt="Bubble sort Algorithm">
+              <p>Hence, there is no swapping required, so the array is completely sorted.</p>
+            </div>
             <div data-type="code-1" class="hidden">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -586,7 +623,47 @@ int main() {
                 </button>
               </div>
             </div>
-            <div data-type="demonstration-2" class="hidden"></div>
+            <div data-type="demonstration-2" class="hidden font-semibold pl-36">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Insertion sort Algorithm:</h2>
+              <p>Now, let's see the working of the insertion sort Algorithm.</p>
+              <p>To understand the working of the insertion sort algorithm, let's take an unsorted array. It will be easier to understand the insertion sort via an example.</p>
+              <p>Let the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort.png" alt="Insertion Sort Algorithm">
+              <p>Initially, the first two elements are compared in insertion sort.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort2.png" alt="Insertion Sort Algorithm">
+              <p>Here, 31 is greater than 12. That means both elements are already in ascending order. So, for now, 12 is stored in a sorted sub-array.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort3.png" alt="Insertion Sort Algorithm">
+              <p>Now, move to the next two elements and compare them.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort4.png" alt="Insertion Sort Algorithm">
+              <p>Here, 25 is smaller than 31. So, 31 is not at correct position. Now, swap 31 with 25. Along with swapping, insertion sort will also check it with all elements in the sorted array.</p>
+              <p>For now, the sorted array has only one element, i.e. 12. So, 25 is greater than 12. Hence, the sorted array remains sorted after swapping.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort5.png" alt="Insertion Sort Algorithm">
+              <p>Now, two elements in the sorted array are 12 and 25. Move forward to the next elements that are 31 and 8.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort6.png" alt="Insertion Sort Algorithm">
+              <p>Both 31 and 8 are not sorted. So, swap them.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort7.png" alt="Insertion Sort Algorithm">
+              <p>After swapping, elements 25 and 8 are unsorted.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort8.png" alt="Insertion Sort Algorithm">
+              <p>So, swap them.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort9.png" alt="Insertion Sort Algorithm">
+              <p>Now, elements 12 and 8 are unsorted.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort10.png" alt="Insertion Sort Algorithm">
+              <p>So, swap them too.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort11.png" alt="Insertion Sort Algorithm">
+              <p>Now, the sorted array has three items that are 8, 12 and 25. Move to the next items that are 31 and 32.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort12.png" alt="Insertion Sort Algorithm">
+              <p>Hence, they are already sorted. Now, the sorted array includes 8, 12, 25 and 31.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort13.png" alt="Insertion Sort Algorithm">
+              <p>Move to the next elements that are 32 and 17.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort14.png" alt="Insertion Sort Algorithm">
+              <p>17 is smaller than 32. So, swap them.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort15.png" alt="Insertion Sort Algorithm">
+              <p>Swapping makes 31 and 17 unsorted. So, swap them too.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort16.png" alt="Insertion Sort Algorithm">
+              <p>Now, swapping makes 25 and 17 unsorted. So, perform swapping again.</p>
+              <img src="https://static.javatpoint.com/ds/images/insertion-sort17.png" alt="Insertion Sort Algorithm">
+              <p>Now, the array is completely sorted.</p>
+            </div>
             <div data-type="code-2" class="hidden">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -902,7 +979,25 @@ function printArray(arr, n)
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration-3"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-3">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Selection sort Algorithm:</h2>
+              <p>Now, let's see the working of the Selection sort Algorithm.</p>
+              <p>To understand the working of the Selection sort algorithm, let's take an unsorted array. It will be easier to understand the Selection sort via an example.</p>
+              <p>Let the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort.png" alt="selection Sort Algorithm">
+              <p>Now, for the first position in the sorted array, the entire array is to be scanned sequentially.</p>
+              <p>At present, <strong>12</strong> is stored at the first position, after searching the entire array, it is found that <strong>8</strong> is the smallest value.</p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort2.png" alt="selection Sort Algorithm">
+              <p>So, swap 12 with 8. After the first iteration, 8 will appear at the first position in the sorted array.</p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort3.png" alt="selection Sort Algorithm">
+              <p>For the second position, where 29 is stored presently, we again sequentially scan the rest of the items of unsorted array. After scanning, we find that 12 is the second lowest element in the array that should be appeared at second position. </p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort4.png" alt="selection Sort Algorithm">
+              <p>Now, swap 29 with 12. After the second iteration, 12 will appear at the second position in the sorted array. So, after two iterations, the two smallest values are placed at the beginning in a sorted way.</p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort5.png" alt="selection Sort Algorithm">
+              <p>The same process is applied to the rest of the array elements. Now, we are showing a pictorial representation of the entire sorting process.</p>
+              <img src="https://static.javatpoint.com/ds/images/selection-sort6.png" alt="selection Sort Algorithm">
+              <p>Now, the array is completely sorted.</p>
+            </div>
             <div class="hidden" data-type="code-3">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -1200,7 +1295,84 @@ var arr = [64, 25, 12, 22, 11];
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration-4"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-4">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Cocktail Sort Algorithm:</h2>
+              <p>Now, let's see the working of the cocktail sort Algorithm.</p>
+              <p>To understand the working of the cocktail sort algorithm, let's take an unsorted array. We are taking a short and accurate array, as we know the complexity of the cocktail sort is <strong>O(n<sup>2</sup>).</strong></p>
+              <p>Let the elements of array are -</p>
+              <p><strong>Array = {4, 0, 3, 1, 7, 1, 2}</strong></p>
+              <p><strong><u>Iteration 1:</u></strong></p>
+              <p><strong>First Forward pass:</strong></p>
+              <p>In first iteration, the forward pass is similar to the bubble sort. The comparisons of forward pass in first iteration are given as follows -</p>
+              <p>Sorting will start from the initial two elements. Let compare them to check which is greater.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping new array will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort2.png" alt="Cocktail Sort Algorithm">
+              <p>Now compare 4 and 3.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort3.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping new array will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort4.png" alt="Cocktail Sort Algorithm">
+              <p>Now, compare 4 and 1.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort5.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping new array will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort6.png" alt="Cocktail Sort Algorithm">
+              <p>Now, compare 4 and 7.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort7.png" alt="Cocktail Sort Algorithm">
+              <p>Now, the comparison will be between 7 and 1.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort8.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping new array will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort9.png" alt="Cocktail Sort Algorithm">
+              <p>Now, compare 7 and 2.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort10.png" alt="Cocktail Sort Algorithm">
+              <p>Now, we reach at the end of the array. After swapping and first forward pass, the array elements will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort11.png" alt="Cocktail Sort Algorithm">
+              <p>After the first forward pass, the largest element of the array is stored at the last position of the array.</p>
+              <p><strong>First Backward pass:</strong></p>
+              <p>Now, the first backward pass is started. It will be started from the last index of the array except for the index where the largest element is stored.</p>
+              <p>So, from the backward direction, first array elements <strong>2</strong> and <strong>1</strong> will be compared.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort12.png" alt="Cocktail Sort Algorithm">
+              <p>Now compare, 1 and 4.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort13.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort14.png" alt="Cocktail Sort Algorithm">
+              <p>Now compare 1 and 1.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort15.png" alt="Cocktail Sort Algorithm">
+              <p>Now compare, 3 and 1.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort16.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort17.png" alt="Cocktail Sort Algorithm">
+              <p>Now compare, 0 and 1.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort18.png" alt="Cocktail Sort Algorithm">
+              <p>So, after the first backward pass, smallest element from the array is stored at the first index of array. So, after first iteration, the array elements will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort19.png" alt="Cocktail Sort Algorithm">
+              <p><strong><u>Iteration 2:</u></strong></p>
+              <p><strong>Second Forward pass:</strong></p>
+              <p>Now, the second forward pass is started. It will be started from the first index of the array except for the index where the smallest element is stored.</p>
+              <p>So, from the forward direction, first array elements <strong>1</strong> and <strong>3</strong> will be compared.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort20.png" alt="Cocktail Sort Algorithm">
+              <br>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort21.png" alt="Cocktail Sort Algorithm">
+              <br>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort22.png" alt="Cocktail Sort Algorithm">
+              <br>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort23.png" alt="Cocktail Sort Algorithm">
+              <p>Now, we reach at the end of the array. After the second forward pass, the second largest array element will be stored at its exact position. After swapping and second forward pass, the array elements will look like -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort24.png" alt="Cocktail Sort Algorithm">
+              <p><strong>Second Backward pass:</strong></p>
+              <p>Now, the second backward pass is started.</p>
+              <p>So, from backward direction, array elements <strong>3</strong> and <strong>2</strong> will be compared.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort25.png" alt="Cocktail Sort Algorithm">
+              <p>After swapping, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort26.png" alt="Cocktail Sort Algorithm">
+              <p>Now, the array is completely sorted, but the algorithm has to complete the entire pass without any <strong>swap</strong> to know that the array is sorted.</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort27.png" alt="Cocktail Sort Algorithm">
+              <br>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort28.png" alt="Cocktail Sort Algorithm">
+              <p>So, after sorting the array elements will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/cocktail-sort29.png" alt="Cocktail Sort Algorithm">
+              <p>Now, the array is completely sorted.</p>
+              <p>Now, the array is completely sorted.</p>
+            </div>
             <div class="hidden" data-type="code-4">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -1666,7 +1838,40 @@ printArray(a);
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration-5"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-5">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Quick Sort Algorithm:</h2>
+              <p>Now, let's see the working of the Quicksort Algorithm.</p>
+              <p>To understand the working of quick sort, let's take an unsorted array. It will make the concept more clear and understandable.</p>
+              <p>Let the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort2.png" alt="Quick Sort Algorithm">
+              <p>In the given array, we consider the leftmost element as pivot. So, in this case, a[left] = 24, a[right] = 27 and a[pivot] = 24.</p>
+              <p>Since, pivot is at left, so algorithm starts from right and move towards left.</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort3.png" alt="Quick Sort Algorithm">
+              <p>Now, a[pivot] &lt; a[right], so algorithm moves forward one position towards left, i.e. -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort4.png" alt="Quick Sort Algorithm">
+              <p>Now, a[left] = 24, a[right] = 19, and a[pivot] = 24.</p>
+              <p>Because, a[pivot] &gt; a[right], so, algorithm will swap a[pivot] with a[right], and pivot moves to right, as -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort5.png" alt="Quick Sort Algorithm">
+              <p>Now, a[left] = 19, a[right] = 24, and a[pivot] = 24. Since, pivot is at right, so algorithm starts from left and moves to right.</p>
+              <p>As a[pivot] &gt; a[left], so algorithm moves one position to right as -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort6.png" alt="Quick Sort Algorithm">
+              <p>Now, a[left] = 9, a[right] = 24, and a[pivot] = 24. As a[pivot] &gt; a[left], so algorithm moves one position to right as -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort7.png" alt="Quick Sort Algorithm">
+              <p>Now, a[left] = 29, a[right] = 24, and a[pivot] = 24. As a[pivot] &lt; a[left], so, swap a[pivot] and a[left], now pivot is at left, i.e. -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort8.png" alt="Quick Sort Algorithm">
+              <p>Since, pivot is at left, so algorithm starts from right, and move to left. Now, a[left] = 24, a[right] = 29, and a[pivot] = 24. As a[pivot] &lt; a[right], so algorithm moves one position to left, as -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort9.png" alt="Quick Sort Algorithm">
+              <p>Now, a[pivot] = 24, a[left] = 24, and a[right] = 14. As a[pivot] &gt; a[right], so, swap a[pivot] and a[right], now pivot is at right, i.e. -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort10.png" alt="Quick Sort Algorithm">
+              <p>Now, a[pivot] = 24, a[left] = 14, and a[right] = 24. Pivot is at right, so the algorithm starts from left and move to right.</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort11.png" alt="Quick Sort Algorithm">
+              <p>Now, a[pivot] = 24, a[left] = 24, and a[right] = 24. So, pivot, left and right are pointing the same element. It represents the termination of procedure.</p>
+              <p>Element 24, which is the pivot element is placed at its exact position.</p>
+              <p>Elements that are right side of element 24 are greater than it, and the elements that are left side of element 24 are smaller than it.</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort12.png" alt="Quick Sort Algorithm">
+              <p>Now, in a similar manner, quick sort algorithm is separately applied to the left and right sub-arrays. After sorting gets done, the array will be -</p>
+              <img src="https://static.javatpoint.com/ds/images/quick-sort13.png" alt="Quick Sort Algorithm">
+            </div>
             <div class="hidden" data-type="code-5">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -2100,7 +2305,54 @@ console.log(arr.join(" "));
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration-6"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-6">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Heap sort Algorithm:</h2>
+              <p>Now, let's see the working of the Heapsort Algorithm.</p>
+              <p>In heap sort, basically, there are two phases involved in the sorting of elements. By using the heap sort algorithm, they are as follows -</p>
+              <ul class="points">
+              <li>The first step includes the creation of a heap by adjusting the elements of the array.</li>
+              <li>After the creation of heap, now remove the root element of the heap repeatedly by shifting it to the end of the array, and then store the heap structure with the remaining elements.</li>
+              </ul>
+              <p>Now let's see the working of heap sort in detail by using an example. To understand it more clearly, let's take an unsorted array and try to sort it using heap sort. It will make the explanation clearer and easier.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm1.png" alt="Heap Sort Algorithm">
+              <p>First, we have to construct a heap from the given array and convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm2.png" alt="Heap Sort Algorithm">
+              <p>After converting the given heap into max heap, the array elements are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm3.png" alt="Heap Sort Algorithm">
+              <p>Next, we have to delete the root element <strong>(89)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(11).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm4.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>89</strong> with <strong>11,</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm5.png" alt="Heap Sort Algorithm">
+              <p>In the next step, again, we have to delete the root element <strong>(81)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(54).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm6.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>81</strong> with <strong>54</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm7.png" alt="Heap Sort Algorithm">
+              <p>In the next step, we have to delete the root element <strong>(76)</strong> from the max heap again. To delete this node, we have to swap it with the last node, i.e. <strong>(9).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm8.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>76</strong> with <strong>9</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm9.png" alt="Heap Sort Algorithm">
+              <p>In the next step, again we have to delete the root element <strong>(54)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(14).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm10.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>54</strong> with <strong>14</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm11.png" alt="Heap Sort Algorithm">
+              <p>In the next step, again we have to delete the root element <strong>(22)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(11).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm12.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>22</strong> with <strong>11</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm13.png" alt="Heap Sort Algorithm">
+              <p>In the next step, again we have to delete the root element <strong>(14)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(9).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm14.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>14</strong> with <strong>9</strong> and converting the heap into max-heap, the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm15.png" alt="Heap Sort Algorithm">
+              <p>In the next step, again we have to delete the root element <strong>(11)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(9).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm16.png" alt="Heap Sort Algorithm">
+              <p>After swapping the array element <strong>11</strong> with <strong>9,</strong> the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm17.png" alt="Heap Sort Algorithm">
+              <p>Now, heap has only one element left. After deleting it, heap will be empty.</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm18.png" alt="Heap Sort Algorithm">
+              <p>After completion of sorting, the array elements are -</p>
+              <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm19.png" alt="Heap Sort Algorithm">
+              <p>Now, the array is completely sorted.</p>
+            </div>
             <div class="hidden" data-type="code-6">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -2569,7 +2821,20 @@ int main()
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-7">
+              <div class="" role="none"><h2>
+                <h2 class="text-emerald-600 text-2xl pb-4">Working of Timsort Algorithm:</h2>  
+                <p><strong>Timsort</strong> is a hybrid sorting algorithm. It is used to give optimal results while dealing with real-world data.</p>
+                <p> Timsort has been derived from<strong> </strong>Insertion Sort and Binary Merge Sort.  At first, the array is stored into smaller chunks of data known as <strong>runs</strong><em><strong>.</strong></em> These runs are sorted using insertion sort and then merged using the merge sort.</p>
+                <h3>Algorithm</h3>
+                <p>Step 1<strong>:</strong>  The array is broken down into runs. </p>
+                <p>Preferably, the size of the run (minrun) should be such that (n/minrun) is a power of 2 (since merge sort gives optimal results in that case).</p>
+                <p>Step 2: Initialize the size of the run as 32 or 64. </p>
+                <p>Step 3: Sort every run using insertion sort. If the array size is smaller than 64, then it is just sorted using insertion sort.</p>
+                <p>Step 4: Merge all the runs one by one using merge sort.</p>
+                <p>Step 5: After every iteration, double the size of the merged sub-array. </p><h3>Visual representation</h3><p>Here is a visual representation of the Timsort. For the sake of<em> </em>simplicity<em>, </em>the minrun is of length 4. </p></div>
+                <img class="max-w-4xl items-center" src="images/jzzju7oi.bmp" alt="#">
+            </div>
             <div class="hidden" data-type="code-7">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -3349,7 +3614,28 @@ printArray(arr, n);
                 </button>
               </div>
             </div>
-            <div class="hidden" data-type="demonstration-8"></div>
+            <div class="hidden font-semibold pl-36" data-type="demonstration-8">
+              <h2 class="text-emerald-600 text-2xl pb-4">Working of Shell sort Algorithm:</h2>
+              <p>Now, let's see the working of the shell sort Algorithm.</p>
+              <p>To understand the working of the shell sort algorithm, let's take an unsorted array. It will be easier to understand the shell sort via an example.</p>
+              <p>Let the elements of array are -</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm1.png" alt="Shell Sort Algorithm">
+              <p>We will use the original sequence of shell sort, i.e., N/2, N/4,....,1 as the intervals.</p>
+              <p>In the first loop, n is equal to 8 (size of the array), so the elements are lying at the interval of 4 (n/2 = 4). Elements will be compared and swapped if they are not in order.</p>
+              <p>Here, in the first loop, the element at the 0<sup>th</sup> position will be compared with the element at 4<sup>th</sup> position. If the 0<sup>th</sup> element is greater, it will be swapped with the element at 4<sup>th</sup> position. Otherwise, it remains the same. This process will continue for the remaining elements.</p>
+              <p>At the interval of 4, the sublists are {33, 12}, {31, 17}, {40, 25}, {8, 42}.</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm2.png" alt="Shell Sort Algorithm">
+              <p>Now, we have to compare the values in every sub-list. After comparing, we have to swap them if required in the original array. After comparing and swapping, the updated array will look as follows -</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm3.png" alt="Shell Sort Algorithm">
+              <p>In the second loop, elements are lying at the interval of 2 (n/4 = 2), where n = 8.</p>
+              <p>Now, we are taking the interval of <strong>2</strong> to sort the rest of the array. With an interval of 2, two sublists will be generated - {12, 25, 33, 40}, and {17, 8, 31, 42}.</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm4.png" alt="Shell Sort Algorithm">
+              <p>Now, we again have to compare the values in every sub-list. After comparing, we have to swap them if required in the original array. After comparing and swapping, the updated array will look as follows -</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm5.png" alt="Shell Sort Algorithm">
+              <p>In the third loop, elements are lying at the interval of 1 (n/8 = 1), where n = 8. At last, we use the interval of value 1 to sort the rest of the array elements. In this step, shell sort uses insertion sort to sort the array elements.</p>
+              <img src="https://static.javatpoint.com/ds/images/shell-sort-algorithm6.png" alt="Shell Sort Algorithm">
+              <p>Now, the array is sorted in ascending order.</p>
+            </div>
             <div class="hidden" data-type="code-8">
               <ul id="myList" class="flex flex-row justify-start" id="myList">
                 <li data-target="content1" class="border-0 rounded-t-xl text-white mr-1 px-4 py-2 bg-emerald-600 hover:bg-emerald-800 " onclick="changeColor(this)">C</li>
@@ -3724,14 +4010,14 @@ printArray(arr);
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="algorithms.js"></script>
-    <script src="SearchingBar.js"></script>
-    <script src="ListToggling.js"></script>
-    <script src="codeDisplay.js"></script>
-    <script src="codeDisplay2.js"></script>
-    <script src="ButtonClicked.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/algorithms.js"></script>
+    <script src="js/SearchingBar.js"></script>
+    <script src="js/ListToggling.js"></script>
+    <script src="js/codeDisplay.js"></script>
+    <script src="js/codeDisplay2.js"></script>
+    <script src="js/ButtonClicked.js"></script>
+    <script src="js/https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
   </body>
 </html>
