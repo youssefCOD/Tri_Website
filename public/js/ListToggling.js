@@ -2,6 +2,7 @@ const dataBtB = document.querySelector(".data-BTB");
 const dataBtBs = dataBtB.firstElementChild;
 const dataBtBss = dataBtBs.querySelectorAll("li");
 const button = document.getElementById("init_btn");
+const descriptionBtn = document.querySelector("#target_button_toChange1");
 
 dataBtB.addEventListener("click", function (e) {
   const clicked = e.target.closest("li");
@@ -27,10 +28,12 @@ dataBtB.addEventListener("click", function (e) {
   if (dataType) {
     dataType.classList.remove("hidden");
     dataType.firstElementChild.classList.remove("hidden");
-    // dataBtns.forEach(function (el) {
-    //   el.classList.remove("bg-white");
-    //   el.classList.remove("text-emerald-600");
-    // });
+    dataBtns.forEach(function (el) {
+      el.classList.remove("bg-white");
+      el.classList.remove("text-emerald-600");
+    });
+    descriptionBtn.classList.add("bg-white");
+    descriptionBtn.classList.add("text-emerald-600");
   } else {
     console.error("Element not found!"); // Optional: log an error or handle the case where the element is not found
   }
